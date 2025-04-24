@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='a.jpeg') }}" class="floating-image a-image" alt="Image A">
+        <img src="{{ url_for('static', filename='c.jpeg') }}" class="floating-image c-image" alt="Image C">
+        <img src="{{ url_for('static', filename='d.jpeg') }}" class="floating-image d-image" alt="Image D">
+        <img src="{{ url_for('static', filename='e.jpeg') }}" class="floating-image e-image" alt="Image E">
+		<img src="{{ url_for('static', filename='a.jpeg') }}" class="floating-image a-image" alt="Image A">
+		
+     
+    </div>
+    <div class="form-container">
+        <h1>Prediction Result</h1>
+        <p class="prediction">The predicted age of marriage is: {{ prediction }}</p>
+        <a href="/">Try another prediction</a>
+    </div>
+</body>
+</html>

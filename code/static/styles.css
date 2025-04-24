@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('/static/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 300px;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type=number], input[type=submit] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    background-color: #4cae4c;
+}
+
+.image-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.floating-image {
+    position: relative;
+    animation: floatImage 10s infinite linear;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
